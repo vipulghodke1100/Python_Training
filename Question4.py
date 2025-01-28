@@ -25,7 +25,8 @@ def find_match(row):
     """
     pattern= r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
     result= re.search(pattern,row['Description'])
-    return result.group() if result else None
+    print(result)
+    return result.group() 
     
 
 def main_function():

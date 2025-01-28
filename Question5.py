@@ -13,11 +13,11 @@ def convertToDict(text):
         dict: dictionary with count of each word
     """
     dict={}
-    arr=[x for x in re.split(r"[,.\s]",text.lower()) if x]
-    # arr=[x for x in arr if x]
+    arr=[x for x in re.split(r"[,.\s]",text.lower())]
+    # print(arr)
     while '' in arr:
         arr.remove('')
-    print(arr)
+    # print(arr)
     for item in arr:
         if item not in dict.keys():
             dict[item]=1
