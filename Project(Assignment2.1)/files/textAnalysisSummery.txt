@@ -1,0 +1,15 @@
+1
+timestamp:2025-01-26 17:45:39.803347
+text: vipul is Vipul word count:3    text: vipul is Vipul most_common:['vipul', 'is', 'Vipul']   text: vipul is Vipul reverse:Vipul is vipul   text: vipul is Vipul is_pallindrome:True    text: vipul is Vipul 
+
+timestamp:2025-01-26 17:47:26.804436
+text: Vipul is vipul  word count:3    most_common:['Vipul', 'is', 'vipul']   reverse:vipul is Vipul   is_pallindrome:True    
+
+timestamp:2025-01-26 18:34:50.801221
+text: vipul is vipul    word count:3    most_common:['vipul']   reverse:vipul is vipul   is_pallindrome:True    
+
+timestamp:2025-01-26 18:34:55.142770
+text: vipul is vipul    word count:3    most_common:['vipul']   reverse:vipul is vipul   is_pallindrome:True    
+
+timestamp:2025-01-26 18:37:48.719050
+
