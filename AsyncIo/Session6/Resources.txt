@@ -1,0 +1,20 @@
+Decorators:
+
+	1) https://youtu.be/WpF6azYAxYg?si=jMMkYHxNn_IoL5VA
+
+	2) https://youtu.be/BE-L7xu8pO4?si=nX0yBJDGkZmDclBo
+	
+	3) https://youtu.be/U-G-mSd4KAE?si=UdEtzybtt1UHSd7n
+
+Asyncio:
+
+	1) https://youtu.be/K56nNuBEd0c?si=w5sPcTjpFXNRA2QF
+	
+	2) https://youtu.be/3E-Ym2mbSCc?si=pixXax-AF10qvvn6
+
+	3) https://youtu.be/GpqAQxH1Afc?si=AfhHktqPEdMoo8Wa
+
+
+Asyncio vs Threading:
+
+https://www.geeksforgeeks.org/asyncio-vs-threading-in-python/
