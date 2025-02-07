@@ -2,8 +2,9 @@ import json
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import time
 
-
+start=time.time()
 def Scrap(search_engine,comp,keyword,pages_to_extract):
     article=[]
     count=0
@@ -60,7 +61,7 @@ def Scrap(search_engine,comp,keyword,pages_to_extract):
                 link=result['data-url']
                 if count < pages_to_extract * 10:
                     count+=1
-                    article.append({'Search String':f'{comp} {keyword}','Search Engine':'Bing','Link':link,'title': title,'timeStamp': time,'Media':media})
+                    article.append({'Search String':f'{comp} {keyword}','Search Engine':'Bing','link':link,'title': title,'timestamp': time,'Media':media})
                 else :
                     break
             print(len(article))
@@ -75,9 +76,10 @@ def load_json(path):
     pages_to_extract=config.get('pages_to_extract',1)
     return companies,keywords,pages_to_extract
 
+
 def main():
     articles=[]
-    companies , keywords ,pages_to_extract =load_json('./config.json')
+    companies , keywords ,pages_to_extract = load_json('./config.json')
     search_engines=['Google','Yahoo','Bing']
     for comp in companies:
         for keyword in keywords:
@@ -90,10 +92,8 @@ def main():
     
     
 def convert_to_csv(articles, filename='scraped_news.csv'):
-    # Flatten the list of articles (in case it's a list of lists)
     flat_articles = [item for sublist in articles for item in sublist]
     
-    # Convert the list of articles into a pandas DataFrame
     df = pd.DataFrame(flat_articles)
     print(df.shape)
     
@@ -105,6 +105,7 @@ def convert_to_csv(articles, filename='scraped_news.csv'):
     
 if __name__=='__main__':
     main()
+    print(time.time() - start)
     
     
     
